@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LAUVISUALS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./assets/images/AdamLau_Tennessee_Wilds_01.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+/* Accordion */
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Table */
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LAUVISUALS</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#STILL" class="w3-bar-item w3-button"> STILL</a>
+      <a href="#MOTION" class="w3-bar-item w3-button"></i> MOTION</a>
+      <a href="#DESIGN" class="w3-bar-item w3-button"></i> DESIGN</a>
+      <a href="#TYPE" class="w3-bar-item w3-button"></i> TYPE</a>
+      <a href="#ABOUT" class="w3-bar-item w3-button"></i> ABOUT</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">STILL</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">MOTION</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">DESIGN</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">TYPE</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small"></span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br>
+    <span class="w3-large"></span>
+    
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- STILL Section -->
+<div class="w3-container" style="padding:128px 16px" id="STILL">
+  <h3 class="w3-center">STILL PHOTOGRAPHY</h3>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="./assets/images/AdamLau_Tennessee_Wilds_02.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A lone pine on Brady Bluff's caprock stands watch as the sun rises along the Cumberland Trail.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./assets/images/AdamLau_Tennessee_Wilds_03.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A shifting autumn leaf's resembles a stained glass window, as seen under a microscope.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./assets/images/AdamLau_Tennessee_Wilds_04.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A warpaint shiner, right, feeds on debris in the swift currents of Little Pigeon River.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./assets/images/AdamLau_Tennessee_Wilds_05.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Trees grow along the edge of Lake Ocoee, along Highway 74 en route to the Little Frog Wilderness.">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="./assets/images/AdamLau_Tennessee_Wilds_06.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Morgan Simmons cools off by diving into pool, along the Rock Creek segment of the Cumberland Trail.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./assets/images/AdamLau_Tennessee_Wilds_07.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Shedding autumn trees are reflected in a pool of fallen leaves in the Sampson Mountain Wilderness.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./assets/images/AdamLau_Tennessee_Wilds_08.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Clear Fork River rages around a tree sitting on a low bank along the Burnt Mill Bridge Loop trail.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./assets/images/AdamLau_Tennessee_Wilds_09.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Clouds spill between blue ridgelines in the Nantahala National Forest at dawn, seen from The Hangover.">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="./assets/images/AdamLau_Tennessee_Wilds_10.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sunlight skims treetops bared for winter in the Big South Fork National River and Recreation Area.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./assets/images/AdamLau_Tennessee_Wilds_12.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Snowflakes of varying sizes and shapes after a fresh snowfall in Knoxville.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./assets/images/AdamLau_Tennessee_Wilds_17.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Naked spore capsules dot the underside of a polypody fern's fronds on Brady Mountain.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./assets/images/AdamLau_Tennessee_Wilds_21.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Stars wheel around Polaris, the North Star, over Newfound Gap in the Great Smoky Mountains National Park.">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- MOTION Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="MOTION">
+  <h3 class="w3-center">MOTION</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+    <div class="w3-third">
+      <iframe title="vimeo-player" src="https://player.vimeo.com/video/88701582?h=c783d8e6ea" width="415" height="233" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <button class="accordion">Description</button>
+        <div class="panel">
+        <p>Help Saul get a date!<br>Charity bachelor auction benefitting the Friends of Literacy.</p>
+        </div>       
+    </div>
+
+    <div class="w3-third">
+      <iframe title="vimeo-player" src="https://player.vimeo.com/video/444382640?h=e66d249d73" width="415" height="233" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <button class="accordion">Description</button>
+        <div class="panel">
+        <p>Katya Rakhmatulina, UC Berkeley environmental engineering Ph.D. student, studies fire and water in Yosemite National Park's Illilouette Basin. Research shows that restoring natural fire regimes to California's mountains could be a win-win: more water, improved biodiversity, and a reduced risk of catastrophic fires.</p>
+        </div>
+    </div>
+
+    <div class="w3-third">
+      <iframe title="vimeo-player" src="https://player.vimeo.com/video/78565361?h=fc65ad1bb0" width="415" height="233" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <button class="accordion">Description</button>
+        <div class="panel">
+        <p>Dawn James and her son Eli James, 2, discover that living with spina bifida is like finding snowflakes - no two days are ever exactly the same.</p>
+        </div>
+    </div>
+
+     <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
+
+</div>
+
+<!-- DESIGN Section -->
+<div class="w3-container w3-white" style="padding:128px 16px" id="DESIGN">
+  <h3 class="w3-center">DESIGN</h3>
+  <p class="w3-center w3-large"></p>
+  <div class="w3-row-padding">
+    
+    <table id="myTable">
+      <tr>
+        <th>Project<br> <button onclick="sortTable()">Sort</button></th>
+        <th><img src="/assets/images/Icon_AI.png" alt="Adobe Illustrator" width="70"></th>
+        <th><img src="/assets/images/Icon_ID.png" alt="Adobe InDesign" width="70"></th>
+        <th><img src="/assets/images/Icon_PS.png" alt="Adobe Photoshop" width="70"></th>
+        <th><img src="/assets/images/Icon_XD.png" alt="Adobe XD" width="70"></th>
+      </tr>
+      <tr>
+        <td>CHSA Museum rebrand<br>
+          <img src="./assets/images/Design_CHSA_logo.jpg" width="200" onclick="onClick(this)" class="w3-hover-opacity" alt="CHSA logo redesign"></td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+      </tr>
+      <tr>
+        <td>Warby Parker infographic<br>
+          <img src="./assets/images/Design_Warby_Parker.jpg" width="200" onclick="onClick(this)" class="w3-hover-opacity" alt="Warby Parker infographic"></td>
+        <td>X</td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Starbucks ad campaign<br>
+          <img src="./assets/images/Design_Starbucks_Nighthawks_1942_ad.jpg" width="200" onclick="onClick(this)" class="w3-hover-opacity" alt="Starbucks ad campaign"></td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Enter the Dragon marketing<br>
+          <img src="./assets/images/Design_Enter_the_Dragon_devices.jpg" width="200" onclick="onClick(this)" class="w3-hover-opacity" alt="Enter the Dragon promo & marketing"></td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+      </tr>
+
+      </tr>
+    </table>
+    
+    <script>
+    function sortTable() {
+      var table, rows, switching, i, x, y, shouldSwitch;
+      table = document.getElementById("myTable");
+      switching = true;
+      /*Make a loop that will continue until
+      no switching has been done:*/
+      while (switching) {
+        //start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 1; i < (rows.length - 1); i++) {
+          //start by saying there should be no switching:
+          shouldSwitch = false;
+          /*Get the two elements you want to compare,
+          one from current row and one from the next:*/
+          x = rows[i].getElementsByTagName("TD")[0];
+          y = rows[i + 1].getElementsByTagName("TD")[0];
+          //check if the two rows should switch place:
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+            //if so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        }
+        if (shouldSwitch) {
+          /*If a switch has been marked, make the switch
+          and mark that a switch has been done:*/
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+        }
+      }
+    }
+    </script>
+
+
+<!-- TYPE Section -->
+<div class="w3-container  w3-white" style="padding:128px 16px" id="TYPE">
+  
+ 
+  <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+
+      <h3 class="w3-center">TYPE</h3><br><br>
+
+      <div class="w3-col m6">
+        <p>CHALLENGE</p>
+        <p>Design three type classification posters in the Vox System: two Serif and one Sans Serif font. Research various periods and design from their influence. Visually communicate the evolution of type. Practice the principles of typography</p><br>
+        <p>PROCESS</p>
+        <p>Inspired by Swedish designer Joseef Müller-Brockman's Zurich Tonhalle theatrical poster series, I set out with the goal of not only creating competent infographics, but to imbue each poster's design with its respective typeface's attributes, personality, and history. In other words, I wanted to paint unmistakeable, vivid images with type. Adding an extra challenge -- that I must use all the letters in the typeface's name to create a dominant lead illustration for each poster -- made this project even trickier. Hours of research and experimentation led to many aborted failures. Some typefaces have strong visual aesthetics, but failed to produce any easily recognizable forms relevant to their history. Other typefaces birthed engaging images, but sometimes leaned too far into illustration, or lacked visual cohesion with other candidates.</p><br>
+        <p>SOLUTION</p>
+        <p>I settled on using Busorama (San Serif), Benguiat (Humanist), and Didi (Didone) in the final series. To tell each typeface's story, I selected a movie poster aesthetic (mirroring Müller-Brockman's approach for contemporary entertainment in his era). This meant leading with each typeface's title/illustration as the dominant graphic, giving strong play to a quote (like a tagline), and letting the other pieces recede into the background, using color and scale to treat them like a supporting cast. In the final step, I opted for red-black-white color palette to unify all three posters into a cohesive set.</p><br>
+        <p>SOFTWARE</p>
+        <p>Illustrator | Photoshop</p>
+      </div>
+  
+      <div class="w3-col m6">
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./assets/images/AdamLau_Project4_Ex2_v15.jpg" alt="Busorama Poster" width="500">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./assets/images/AdamLau_Project4_Ex2_v152.jpg" alt="Benguiat Poster" width="500">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./assets/images/AdamLau_Project4_Ex2_v153.jpg" alt="Didi Poster" width="500">
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          
+          <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+          }
+          </script>
+        
+      </div>
+
+    </div>
+  </div>
+  
+
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+  
+  
+
+<!-- ABOUT Section -->
+<div class="w3-content w3-container w3-padding-64" id="ABOUT">
+  <h3 class="w3-center">ABOUT</h3>
+  <p class="w3-center"><em></em></p>
+  <p>Adam Lau current works as a photographer, filmmaker, and multimedia designer at UC Berkeley’s College of Engineering. He holds an M.A. in Visual Communication from UNC Chapel Hill, where he was a Roy H. Park Fellow. Previously, he worked at the Knoxville News Sentinel, Baton Rouge Advocate, San Francisco Chronicle, and The Associated Press.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-48">
+      
+      <img src="./assets/images/Adam_Lau_self_portrait.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="400" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>A marine biologist by training, he also holds a B.S. in Marine Biology and Psychobiology from UCLA. His passions include underwater photography and environmental storytelling.</p><br>
+      <h5>CLIENTS:</h5>
+      <ul>
+        <li>University of California</li>
+        <li>Science (AAAS)</li>
+        <li>National Institutes of Heath (NIH)</li>
+        <li>Centers for Disease Control and Prevention (CDC)</li>
+      </ul>
+      <h5>RECOGNITION:</h5>
+      <ul>
+        <li>2020 - CASE D. VII Award of Excellence, Design </li>
+        <li>2018 - Society of News Design, Standalone Media)</li>
+        <li>2017 - CrossCurrents Fdn. Grantee, GoodPitch Local NC</li>
+      </ul>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">SKILLS:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-film"></i>Film Production</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Get in touch. Send me a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Berkeley, CA</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1 510-210-3711</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: adam@lauvisuals.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+   
+    <!-- Image of location/map -->
+    <img src="/assets/images/AdamLau_Tennessee_Wilds_23.jpg" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
